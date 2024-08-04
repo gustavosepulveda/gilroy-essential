@@ -41,7 +41,7 @@ nav ul li a:hover {
     background-image: url('hero-image.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     text-align: center;
     padding: 100px 20px;
 }
@@ -61,4 +61,77 @@ nav ul li a:hover {
 
 .button:hover {
     background-color: #ff5500;
+}
+
+/* Services Section */
+
+#services {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+/* Our Work */
+
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Location and Contact */
+
+#locations {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#locations h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.location {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
