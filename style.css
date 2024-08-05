@@ -51,17 +51,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.button {
-    background-color: #ff8800;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: #ff5500;
-}
 
 /* Services Section */
 
