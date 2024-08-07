@@ -1,38 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #959DCC;
+    --brand: #FFAB76;
+    --white: #fff;
+}
+
+body {
+    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+
+}
+
 
 /* Header */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
+/* .masthead {
+    background-size: cover;
+    min-height: 60vh;
+    position:relative;
     color: white;
-    padding: 10px 0;
-}
+    text-shadow: 2px 2px 2px rgba(0,0, 0,.2);
+} */
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
 
 
 /* Hero Section */
@@ -128,9 +122,9 @@ footer {
 
 /* transparent top  */
 
-.navbar {
+/* .navbar {
     transition: background-color 0.5s ease;
 }
 .navbar.scrolled {
     background-color: #333 !important;
-}
+} */
