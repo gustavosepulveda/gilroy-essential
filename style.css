@@ -20,7 +20,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white !important;
+    color: white;
 }
 
 img {
@@ -66,8 +66,12 @@ section {
 }
 
 .btn-brand {
-    background-color: var(--brand) !important;
-    border-radius: 20px !important;
+    background-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
 }
 
 
