@@ -4,15 +4,15 @@
     --bg1: #151828;
     --bg2: #1B1F34;
     --body: #959DCC;
-    --brand: #FFAB76;
+    --brand: #ffde06;
     --white: #fff;
 }
 
 body {
     font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--body) !important;
+    color: var(--body);
     line-height: 1.8;
-    background-color: var(--bg1) !important;
+    background-color: var(--bg1);
 
 }
 
@@ -43,6 +43,10 @@ section {
     font-size: 32px;
 }
 
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
 
 
 /* Hero Section */
@@ -53,6 +57,11 @@ section {
     background-position: center;
     background-size: cover;
     
+}
+
+#hero p {
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 /* Button */
@@ -72,49 +81,30 @@ section {
 .btn-brand:hover {
     background-color: transparent;
     color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
 }
 
 
 
 
-
-/* .hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    color: black;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-} */
 
 
 /* Services Section */
-/* 
-#services {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
 
-#services h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
 
-#services ul {
-    list-style: none;
-    padding: 0;
-}
 
-#services ul li {
-    font-size: 1.2em;
-    margin: 10px 0;
-} */
+
+
 
 
 /* Our Work */
