@@ -19,11 +19,11 @@
 	<body id="home" data-bs-spy="scroll" data-bs-target=".navbar">
 		<!-- Navbar -->
 
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<nav class="navbar navbar-expand-lg fixed-top">
 			<div class="container">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="#"> 
 					<img
-						src="public/Gilroy-logo.svg"
+						src="public/gilroy_essential_logo.png"
 						alt="Logo"
 						width="100"
 						height="100"
@@ -32,43 +32,49 @@
 				<button
 					class="navbar-toggler"
 					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar"
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#work">Our Work</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#services">Services</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#location">Location</a>
-						</li>
-					</ul>
-					<a href="#" class="btn btn-lg btn-outline-brand ms-lg-3"
-						>Book Appointment</a
-					>
-					<!-- <div class="container" >
-                  <h5>
-                    <i class="bi bi-instagram"></i>
-                  </h5>
-                  <h5>
-                    <i class="bi bi-yelp"></i>
-                  </h5>
-                  
-                </div> -->
+				<div
+					class="offcanvas offcanvas-end offcanvas-bg"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./public/gilroy_essential_logo.png" alt="gilroy Essential Barbershop Logo"></h5>
+						<button
+							type="button"
+							class="btn-close text-reset"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#hero">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#work">Our Work</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#services">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#location">Location</a>
+							</li>
+						</ul>
+						<a href="#" class="btn btn-lg btn-outline-brand ms-lg-3"
+							>Book Appointment ></a
+						>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -82,8 +88,8 @@
 						<h1 class="display-3">
 							Have an Essential haircut for any ocasion!
 						</h1>
-						<p>Book with us today</p>
-						<a href="#" class="btn btn-lg btn-brand">Book Appointment</a>
+						<p>Book with a profesional barber today</p>
+						<a href="#" class="btn btn-lg btn-brand">Book Appointment ></a>
 					</div>
 				</div>
 			</div>
@@ -136,8 +142,8 @@
 						<img src="./public/bw_services_img.jpg" alt="bw_img" />
 					</div>
 					<div class="col-lg-4 offset-lg-1">
-						<h6>Services</h6>
-						<h1>Not just a haircut, it's an experience.</h1>
+						<h2>Services</h2>
+						<h3>Not just a haircut, it's an experience.</h3>
 						<ul>
 							<li>Haircuts</li>
 							<li>Line ups</li>
@@ -145,17 +151,17 @@
 							<li>Straight Razor Shaving</li>
 							<li>& Many More</li>
 						</ul>
-						<a href="#" class="btn btn-lg btn-brand">Book With Us Today</a>
+						<a href="#" class="btn btn-lg btn-brand mt-1">Book With Us Today ></a>
 					</div>
 				</div>
 				<div class="row rowtwo align align-items-center">
-					<div class="col-lg-5 order-2 order-lg-1 intro">
+					<div class="col-lg-5 order-2 order-lg-1 intro ">
 						<h1>Timeless Fades & Clean Edges</h1>
 						<p>
-							Check out who is available to give you any hair you are looking
-							for.
+							Check out who is available to give you any haircut you are looking
+							for. We also welcome walk-ins.
 						</p>
-						<a href="#" class="btn btn-lg btn-brand">Our Barbers</a>
+						<a href="#" class="btn btn-lg btn-brand mt-1">Our Barbers ></a>
 					</div>
 					<div class="col order-1 order-lg-2">
 						<img src="./public/bw_img_3.jpg" alt="black and white image" />
@@ -166,12 +172,12 @@
 
 		<!-- Location and Contact -->
 
-		<footer id="locations">
+		<footer id="location">
 			<div class="container location">
 				<div class="row">
 					<div class="col text-center my-4">
-						<h3>Gilroy Essential Barbershop</h3>
-						<p>197 B Welburn Ave Gilroy, CA, 95020</p>
+						<h3><img src="./public/gilroy_essential_logo.png" alt="Gilroy Essential Barbershop"></h3>
+						<h3>197 B Welburn Ave Gilroy, CA, 95020</h3>
 						<div class="d-flex justify-content-center align-items-center my-2">
 							<p class="mb-0 text-decoration-underline">Tuesday-Friday</p>
 							<h6 class="mb-0 ms-2">9AM-7PM</h6>
