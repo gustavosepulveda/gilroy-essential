@@ -82,6 +82,11 @@ section {
 	font-weight: 300;
 }
 
+.bi {
+	font-size: 1rem;
+	color: var(--body);
+}
+
 /* Hero Section */
 
 #hero {
@@ -204,11 +209,11 @@ section {
 }
 
 #location img {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	max-width: 15rem;
 }
 
- #location a {
+#location a {
 	color: var(--brand);
 	font-weight: 600;
- }
+}
