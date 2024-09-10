@@ -93,7 +93,7 @@ section {
 
 /* Hero Section */
 
-#hero {
+#home {
 	background: url(./public/cover_1.jpg);
 	min-height: 100vh;
 	background-position: center;
@@ -101,7 +101,7 @@ section {
 	padding-top: 12.5rem;
 }
 
-#hero p {
+#home p {
 	margin-top: 24px;
 	margin-bottom: 24px;
 	color: white;
@@ -109,7 +109,7 @@ section {
 	font-weight: 300;
 }
 
-#hero h1 {
+#home h1 {
 	font-size: 52px;
 	font-weight: 500;
 	color: var(--bg1);
