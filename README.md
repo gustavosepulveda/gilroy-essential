@@ -1,1 +1,1 @@
-A simple HTML/JS/CSS starter template
+Static Website for a barbershop. Links to Booksy to make appointments and payments. 
