@@ -1,532 +1,934 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-		/>
-		<title>Gilroy Essential Barbershop</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body id="main" data-bs-spy="scroll" data-bs-target=".navbar">
-		<!-- Navbar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Gilroy Essential Barbershop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="main" data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navbar -->
 
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="#">
-					<img
-						src="public/gilroy_essential_logo.png"
-						alt="Logo"
-						width="100"
-						height="100"
-						class="img-fluid"
-					/>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="public/gilroy_essential_logo.png"
+            alt="Logo"
+            width="100"
+            height="100"
+            class="img-fluid"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-				<div
-					class="offcanvas offcanvas-end offcanvas-bg offcanvas-narrow"
-					tabindex="-1"
-					id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel"
-				>
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-							<img
-								src="./public/gilroy_essential_logo.png"
-								alt="gilroy Essential Barbershop Logo"
-							/>
-						</h5>
-						<button
-							type="button"
-							class="btn-close text-reset"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="offcanvas-body">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#home"
-									>Home</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#work">Our Work</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#services">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#location">Location</a>
-							</li>
-						</ul>
-						<div class="social-links d-flex justify-content-start my-2 px-3">
-							<a
-								href="https://www.instagram.com/gilroyessentialbarbershop/"
-								target="_blank"
-								class="me-3"
-							>
-								<i class="bi bi-instagram"></i>
-							</a>
-							<a
-								href="https://www.yelp.com/biz/gilroy-essential-barbershop-gilroy"
-								target="_blank"
-								class="me-3"
-							>
-								<i class="bi bi-yelp"></i>
-							</a>
-						</div>
+        <div
+          class="offcanvas offcanvas-end offcanvas-bg offcanvas-narrow"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img
+                src="./public/gilroy_essential_logo.png"
+                alt="gilroy Essential Barbershop Logo"
+              />
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Our Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Location</a>
+              </li>
+            </ul>
+            <div class="social-links d-flex justify-content-start my-2 px-3">
+              <a
+                href="https://www.instagram.com/gilroyessentialbarbershop/"
+                target="_blank"
+                class="me-3"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://www.yelp.com/biz/gilroy-essential-barbershop-gilroy"
+                target="_blank"
+                class="me-3"
+              >
+                <i class="bi bi-yelp"></i>
+              </a>
+            </div>
 
-						<div class="dropdown">
-							<a
-								href="#"
-								class="btn btn-lg btn-outline-brand ms-lg-3 dropdown-toggle"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-								>Book Appointment
-							</a>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="btn btn-lg btn-outline-brand ms-lg-3 dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Book Appointment
+              </a>
 
-							<div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
-								<!-- Dennis links -->
-								<a class="dropdown-item" href="http://barberdennis7.booksy.com" target="_blank">
-									Dennis
-									</a>
-									<div class="text-center my-3">
-										<a href="http://barberdennis7.booksy.com" target="_blank">
-										<img
-											src="public/dennis_img.jpg"
-											alt="Dennis"
-											class="img-fluid"
-											style="max-width: 250px; height: auto;"
-										/>
-										<a href="http://barberdennis7.booksy.com" class="mt-2 btn btn-outline-brand" target="_blank">
-											Book Now
-										</a>
-									</a>
-										<p class="mt-2">
-											<a
-												href="https://www.instagram.com/dennisbarber07/"
-												target="_blank"
-												class="btn btn-outline-dark"
-												><i class="bi bi-instagram"> </i>dennisbarber07</a
-											>
-										</p>
-								</div>
-								<!-- Gabriel links -->
-								<a
-									class="dropdown-item"
-									href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" 
-									target="_blank"
-								>
-								Gabriel
-								</a>
-								<div class="text-center my-3">
-									<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" target="_blank">
-									<img
-										src="public/gabriel_img.jpg"
-										alt="Gabriel"
-										class="img-fluid"
-										style="max-width: 250px; height: auto;"
-									/>
-									<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" class="mt-2 btn btn-outline-brand " target="_blank">
-										Book Now
-									</a>
-								</a>
-								
-									<p class="mt-2">
-										<a
-											href="https://www.instagram.com/barbergabe__/"
-											target="_blank"
-											class="btn btn-outline-dark"
-											><i class="bi bi-instagram"> </i>barbergabe__</a
-										>
-									</p>
-								</div>
-							</div>
-							</div>
-						</div>
-					</div>
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <!-- Dennis links -->
+                <a
+                  class="dropdown-item"
+                  href="http://barberdennis7.booksy.com"
+                  target="_blank"
+                >
+                  Dennis
+                </a>
+                <div class="text-center my-3">
+                  <a href="http://barberdennis7.booksy.com" target="_blank">
+                    <img
+                      src="public/dennis_img.jpg"
+                      alt="Dennis"
+                      class="img-fluid"
+                      style="max-width: 250px; height: auto"
+                    />
+                  </a>
+                  <a
+                    href="http://barberdennis7.booksy.com"
+                    class="mt-2 btn btn-outline-brand"
+                    target="_blank"
+                  >
+                    Book Now
+                  </a>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/dennisbarber07/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"> </i>dennisbarber07
+                    </a>
+                  </p>
+                </div>
+                <!-- Gabriel links -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                  target="_blank"
+                >
+                  Gabriel
+                </a>
+                <div class="text-center my-3">
+                  <a
+                    href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                    target="_blank"
+                  >
+                    <img
+                      src="public/gabriel_img.jpg"
+                      alt="Gabriel"
+                      class="img-fluid"
+                      style="max-width: 250px; height: auto"
+                    />
+                  </a>
+                  <a
+                    href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                    class="mt-2 btn btn-outline-brand"
+                    target="_blank"
+                  >
+                    Book Now
+                  </a>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/barbergabe__/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"> </i>barbergabe__
+                    </a>
+                  </p>
+                </div>
+                <!-- PaLaCalleCutz links -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                  target="_blank"
+                >
+                  PaLaCalleCutz
+                </a>
+                <div class="text-center my-3">
+                  <a
+                    href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                    target="_blank"
+                  >
+                    <img
+                      src="public/palacallecutz_img.jpeg"
+                      alt="PaLaCalleCutz"
+                      class="img-fluid"
+                      style="max-width: 250px; height: auto"
+                    />
+                  </a>
+                  <a
+                    href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                    class="mt-2 btn btn-outline-brand"
+                    target="_blank"
+                  >
+                    Book Now
+                  </a>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/elbarbero_0ficial/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"> </i>elbarbero_0ficial
+                    </a>
+                  </p>
+                </div>
+                <!-- RNJ Barber Co. links -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                  target="_blank"
+                >
+                  RNJ Barber Co.
+                </a>
+                <div class="text-center my-3">
+                  <a
+                    href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                    target="_blank"
+                  >
+                    <img
+                      src="public/rnjbarberco_img.jpeg"
+                      alt="RNJ Barber Co."
+                      class="img-fluid"
+                      style="max-width: 250px; height: auto"
+                    />
+                  </a>
+                  <a
+                    href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                    class="mt-2 btn btn-outline-brand"
+                    target="_blank"
+                  >
+                    Book Now
+                  </a>
+                  <p class="mt-2">
+                    <a href="#" target="_blank" class="btn btn-outline-dark">
+                      <i class="bi bi-instagram"> </i>rnjbarberco
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-			</div>
-		</nav>
+    <!-- Hero -->
 
-		<!-- Hero -->
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="display-3">
+              Have an Essential haircut for any ocasion!
+            </h1>
+            <p>Book with a profesional barber today</p>
 
-		<section id="home">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<h1 class="display-3">
-							Have an Essential haircut for any ocasion!
-						</h1>
-						<p>Book with a profesional barber today</p>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="btn btn-lg btn-brand dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Book Appointment</a
+              >
 
-						<div class="dropdown">
-							<a
-								href="#"
-								class="btn btn-lg btn-brand dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-								>Book Appointment</a
-							>
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <!-- Dennis -->
+                <a
+                  class="dropdown-item"
+                  href="http://barberdennis7.booksy.com"
+                  target="_blank"
+                >
+                  Dennis
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a href="http://barberdennis7.booksy.com" target="_blank">
+                      <img
+                        src="public/dennis_img.jpg"
+                        alt="Dennis"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="http://barberdennis7.booksy.com"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/dennisbarber07/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> dennisbarber07
+                    </a>
+                  </p>
+                </div>
 
-							<div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                <!-- Gabriel -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                  target="_blank"
+                >
+                  Gabriel
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/gabriel_img.jpg"
+                        alt="Gabriel"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/barbergabe__/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"> </i>barbergabe__
+                    </a>
+                  </p>
+                </div>
 
+                <!-- PaLaCalleCutz -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                  target="_blank"
+                >
+                  PaLaCalleCutz
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/palacallecutz_img.jpeg"
+                        alt="PaLaCalleCutz"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/elbarbero_0ficial/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> elbarbero_0ficial
+                    </a>
+                  </p>
+                </div>
 
-								<!-- Dennis -->
-								<a class="dropdown-item" href="http://barberdennis7.booksy.com" target="_blank">
-									Dennis
-								</a>
-								<div class="text-center my-3">
-									<div class="d-flex flex-column align-items-center">
-										<a href="http://barberdennis7.booksy.com" target="_blank">
-											<img 
-												src="public/dennis_img.jpg"
-												alt="Dennis"
-												class="img-fluid"
-												style="max-width: 250px; height: auto;"
-											/>
-										</a>
-										<a href="http://barberdennis7.booksy.com" class="mt-2 btn btn-brand" target="_blank">
-											Book Now
-										</a>
-									</div>
-										<p class="mt-2">
-											<a href="https://www.instagram.com/dennisbarber07/" target="_blank" class="btn btn-outline-dark">
-												<i class="bi bi-instagram"></i> dennisbarber07
-											</a>
-										</p>
-								</div>
+                <!-- RNJ Barber Co. -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                  target="_blank"
+                >
+                  RNJ Barber Co.
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/rnjbarberco_img.jpeg"
+                        alt="RNJ Barber Co."
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a href="#" target="_blank" class="btn btn-outline-dark">
+                      <i class="bi bi-instagram"> </i>rnjbarberco
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-									<!-- Gabriel -->
-									<a
-										class="dropdown-item"
-										href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
-										target="_blank"
-									>
-									Gabriel
-									</a>
-								<div class="text-center my-3">
-									<div class="d-flex flex-column align-items-center">
-										<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" target="_blank">
-											<img
-												src="public/gabriel_img.jpg"
-												alt="Gabriel"
-												class="img-fluid"
-												style="max-width: 250px; height: auto;"
-											/>
-											<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" class="mt-2 btn btn-brand " target="_blank">
-												Book Now
-											</a>
-										</a>
-									</div>
-									<p class="mt-2">
-										<a
-											href="https://www.instagram.com/barbergabe__/"
-											target="_blank"
-											class="btn btn-outline-dark"
-										>
-											<i class="bi bi-instagram"> </i>barbergabe__
-										</a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Photo Gallery -->
 
-		<!-- Photo Gallery -->
+    <section id="work">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img src="./public/img_gilroy_1.jpg" alt="image 1" />
+          </div>
+          <div class="col-6">
+            <img src="./public/img_gilroy_2.jpg" alt="image 2" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="./public/img_gilroy_3.jpg" alt="image 3" />
+          </div>
+          <div class="col-6">
+            <img src="./public/img_gilroy_4.jpg" alt="image 4" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="./public/img_gilroy_5.jpg" alt="image 5" />
+          </div>
+          <div class="col-6">
+            <img src="./public/img_gilroy_6.jpg" alt="image 6" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="./public/img_gilroy_7.jpg" alt="image 7" />
+          </div>
+          <div class="col-6">
+            <img src="./public/img_gilroy_8.jpg" alt="image 8" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="./public/img_gilroy_11.jpg" alt="image 11" />
+          </div>
+          <div class="col-6">
+            <img src="./public/img_gilroy_12.jpg" alt="image 12" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section id="work">
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<img src="./public/img_gilroy_1.jpg" alt="image 1" />
-					</div>
-					<div class="col-6">
-						<img src="./public/img_gilroy_2.jpg" alt="image 2" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<img src="./public/img_gilroy_3.jpg" alt="image 3" />
-					</div>
-					<div class="col-6">
-						<img src="./public/img_gilroy_4.jpg" alt="image 4" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<img src="./public/img_gilroy_5.jpg" alt="image 5" />
-					</div>
-					<div class="col-6">
-						<img src="./public/img_gilroy_6.jpg" alt="image 6" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<img src="./public/img_gilroy_7.jpg" alt="image 7" />
-					</div>
-					<div class="col-6">
-						<img src="./public/img_gilroy_8.jpg" alt="image 8" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<img src="./public/img_gilroy_11.jpg" alt="image 11" />
-					</div>
-					<div class="col-6">
-						<img src="./public/img_gilroy_12.jpg" alt="image 12" />
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row align-items-center mx-3 mx-md-0">
+          <div class="col-lg-5 intro">
+            <img src="./public/bw_services_img.jpg" alt="bw_img" />
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <h1>Not just a haircut, it's an experience.</h1>
+            <p>Our Services Include:</p>
+            <ul>
+              <li>Haircuts</li>
+              <li>Line ups</li>
+              <li>Beard Trims</li>
+              <li>Straight Razor Shaving</li>
+              <li>& Many More</li>
+            </ul>
 
-		<!-- Services -->
-		<section id="services">
-			<div class="container">
-				<div class="row align-items-center mx-3 mx-md-0">
-					<div class="col-lg-5 intro">
-						<img src="./public/bw_services_img.jpg" alt="bw_img" />
-					</div>
-					<div class="col-lg-6 offset-lg-1">
-						<h1>Not just a haircut, it's an experience.</h1>
-						<p>Our Services Include:</p>
-						<ul>
-							<li>Haircuts</li>
-							<li>Line ups</li>
-							<li>Beard Trims</li>
-							<li>Straight Razor Shaving</li>
-							<li>& Many More</li>
-						</ul>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="btn btn-lg btn-brand mt-1 dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Book With Us Today
+              </a>
 
-						<div class="dropdown">
-							<a href="#" class="btn btn-lg btn-brand mt-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-								>Book With Us Today </a
-							>
-							<div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <!-- Dennis -->
+                <a
+                  class="dropdown-item"
+                  href="http://barberdennis7.booksy.com"
+                  target="_blank"
+                >
+                  Dennis
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a href="http://barberdennis7.booksy.com" target="_blank">
+                      <img
+                        src="public/dennis_img.jpg"
+                        alt="Dennis"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="http://barberdennis7.booksy.com"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/dennisbarber07/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> dennisbarber07
+                    </a>
+                  </p>
+                </div>
 
-									<!-- Dennis -->
-								<a class="dropdown-item" href="http://barberdennis7.booksy.com" target="_blank">
-									Dennis
-								</a>
-								<div class="text-center my-3">
-										<div class="d-flex flex-column align-items-center">
-												<a href="http://barberdennis7.booksy.com" target="_blank">
-													<img
-														src="public/dennis_img.jpg"
-														alt="Dennis"
-														class="img-fluid"
-														style="max-width: 250px; height: auto;"
-													/>
-												</a>
-												<!-- Book Now button directly below the image -->
-												<a href="http://barberdennis7.booksy.com" class="mt-2 btn btn-brand" target="_blank">
-														Book Now
-												</a>
-										</div>
-										<p class="mt-2">
-												<a href="https://www.instagram.com/dennisbarber07/" target="_blank" class="btn btn-outline-dark">
-														<i class="bi bi-instagram"></i> dennisbarber07
-												</a>
-										</p>
-								</div>
-								
-								<!-- Gabriel -->
-								<a class="dropdown-item" href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" target="_blank">
-										Gabriel
-								</a>
-								<div class="text-center my-3">
-										<!-- Wrap image and button in a div with flex properties -->
-										<div class="d-flex flex-column align-items-center">
-												<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" target="_blank">
-														<img
-																src="public/gabriel_img.jpg"
-																alt="Gabriel"
-																class="img-fluid"
-																style="max-width: 250px; height: auto;"
-														/>
-												</a>
-												<!-- Book Now button directly below the image -->
-												<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" class="mt-2 btn btn-brand" target="_blank">
-														Book Now
-												</a>
-										</div>
-										<p class="mt-2">
-												<a href="https://www.instagram.com/barbergabe__/" target="_blank" class="btn btn-outline-dark">
-														<i class="bi bi-instagram"></i> barbergabe__
-												</a>
-										</p>
-								</div>
-						
+                <!-- Gabriel -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                  target="_blank"
+                >
+                  Gabriel
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/gabriel_img.jpg"
+                        alt="Gabriel"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/barbergabe__/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> barbergabe__
+                    </a>
+                  </p>
+                </div>
 
+                <!-- PaLaCalleCutz -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                  target="_blank"
+                >
+                  PaLaCalleCutz
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/palacallecutz_img.jpeg"
+                        alt="PaLaCalleCutz"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/elbarbero_0ficial/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> elbarbero_0ficial
+                    </a>
+                  </p>
+                </div>
 
-							</div>
-					</div>
-				</div>
-				<div class="row rowtwo align align-items-center">
-					<div class="col-lg-5 order-2 order-lg-1 intro">
-						<h1>Timeless Fades & Clean Edges</h1>
-						<p>
-							Check out who is available to give you any haircut you are looking
-							for. We also welcome walk-ins.
-						</p>
-						<div class="dropdown">
-							<a href="#" class="btn btn-lg btn-brand mt-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Our Barbers
-							</a>
+                <!-- RNJ Barber Co. -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                  target="_blank"
+                >
+                  RNJ Barber Co.
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/rnjbarberco_img.jpeg"
+                        alt="RNJ Barber Co."
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a href="#" target="_blank" class="btn btn-outline-dark">
+                      <i class="bi bi-instagram"></i> rnjbarberco
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-							<div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+        <div class="row rowtwo align align-items-center">
+          <div class="col-lg-5 order-2 order-lg-1 intro">
+            <h1>Timeless Fades & Clean Edges</h1>
+            <p>
+              Check out who is available to give you any haircut you are looking
+              for. We also welcome walk-ins.
+            </p>
 
-								<!-- Dennis -->
-								<a class="dropdown-item" href="http://barberdennis7.booksy.com" target="_blank">
-									Dennis
-								</a>
-								<div class="text-center my-3">
-									<div class="d-flex flex-column align-items-center">
-										<a href="http://barberdennis7.booksy.com" target="_blank">
-											<img
-												src="public/dennis_img.jpg"
-												alt="Dennis"
-												class="img-fluid"
-												style="max-width: 250px; height: auto;"
-											/>
-										</a>
-										<!-- Book Now button directly below the image -->
-										<a href="http://barberdennis7.booksy.com" class="mt-2 btn btn-brand" target="_blank">
-												Book Now
-										</a>
-									</div>
-									<p class="mt-2">
-											<a href="https://www.instagram.com/dennisbarber07/" target="_blank" class="btn btn-outline-dark">
-												<i class="bi bi-instagram"></i> dennisbarber07
-											</a>
-									</p>
-							</div>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="btn btn-lg btn-brand mt-1 dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Barbers
+              </a>
 
-							<!-- Gabriel -->
-							<a class="dropdown-item" href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" target="_blank">
-								Gabriel
-							</a>
-							<div class="text-center my-3">
-								<!-- Wrap image and button in a div with flex properties -->
-								<div class="d-flex flex-column align-items-center">
-									<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" target="_blank">
-										<img
-											src="public/gabriel_img.jpg"
-											alt="Gabriel"
-											class="img-fluid"
-											style="max-width: 250px; height: auto;"
-										/>
-									</a>
-									<!-- Book Now button directly below the image -->
-									<a href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1" class="mt-2 btn btn-brand" target="_blank">
-											Book Now
-									</a>
-								</div>
-									<p class="mt-2">
-										<a href="https://www.instagram.com/barbergabe__/" target="_blank" class="btn btn-outline-dark">
-											<i class="bi bi-instagram"></i> barbergabe__
-										</a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col order-1 order-lg-2">
-						<img src="./public/bw_img_3.jpg" alt="black and white image" />
-					</div>
-				</div>
-			</div>
-		</section>
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <!-- Dennis -->
+                <a
+                  class="dropdown-item"
+                  href="http://barberdennis7.booksy.com"
+                  target="_blank"
+                >
+                  Dennis
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a href="http://barberdennis7.booksy.com" target="_blank">
+                      <img
+                        src="public/dennis_img.jpg"
+                        alt="Dennis"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="http://barberdennis7.booksy.com"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/dennisbarber07/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> dennisbarber07
+                    </a>
+                  </p>
+                </div>
 
-		<!-- Location and Contact -->
+                <!-- Gabriel -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                  target="_blank"
+                >
+                  Gabriel
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/gabriel_img.jpg"
+                        alt="Gabriel"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1546740_barbergabe_barber-shop_100868_gilroy#ba_s=sh_1"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/barbergabe__/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> barbergabe__
+                    </a>
+                  </p>
+                </div>
 
-		<footer id="location">
-			<div class="container location">
-				<div class="row">
-					<div class="col text-center my-4">
-						<img
-							src="public/gilroy_essential_logo.png"
-							alt="Logo"
-							class="img-fluid"
-						/>
-						<div
-							class="social-links d-flex justify-content-center mx-auto mb-4 px-3"
-						>
-							<a
-								href="https://www.instagram.com/gilroyessentialbarbershop/"
-								target="_blank"
-								class="me-3"
-							>
-								<i class="bi bi-instagram"></i>
-							</a>
-							<a
-								href="https://www.yelp.com/biz/gilroy-essential-barbershop-gilroy"
-								target="_blank"
-								class="me-3"
-							>
-								<i class="bi bi-yelp"></i>
-							</a>
-						</div>
-						<h3>
-							<a
-								href="https://www.google.com/maps/search/?api=1&query=197+B+Welburn+Ave+Gilroy+CA+95020"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								197 B Welburn Ave<br />
-								Gilroy, CA, 95020
-							</a>
-						</h3>
-						<div class="d-flex justify-content-center align-items-center my-2">
-							<p class="mb-0 text-decoration-underline">Tuesday-Friday</p>
-							<h6 class="mb-0 ms-2">9AM-7PM</h6>
-						</div>
-						<div class="d-flex justify-content-center align-items-center my-2">
-							<p class="mb-0 text-decoration-underline">Saturday</p>
-							<h6 class="mb-0 ms-2">9AM - 4PM</h6>
-						</div>
-						<div class="d-flex justify-content-center align-items-center my-2">
-							<p class="mb-0 text-decoration-underline">Sunday & Monday</p>
-							<h6 class="mb-0 ms-2">Closed</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+                <!-- PaLaCalleCutz -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                  target="_blank"
+                >
+                  PaLaCalleCutz
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/palacallecutz_img.jpeg"
+                        alt="PaLaCalleCutz"
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1338844_palacallecutz_barber-shop_100868_gilroy"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a
+                      href="https://www.instagram.com/elbarbero_0ficial/"
+                      target="_blank"
+                      class="btn btn-outline-dark"
+                    >
+                      <i class="bi bi-instagram"></i> elbarbero_0ficial
+                    </a>
+                  </p>
+                </div>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
-	</body>
+                <!-- RNJ Barber Co. -->
+                <a
+                  class="dropdown-item"
+                  href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                  target="_blank"
+                >
+                  RNJ Barber Co.
+                </a>
+                <div class="text-center my-3">
+                  <div class="d-flex flex-column align-items-center">
+                    <a
+                      href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                      target="_blank"
+                    >
+                      <img
+                        src="public/rnjbarberco_img.jpeg"
+                        alt="RNJ Barber Co."
+                        class="img-fluid"
+                        style="max-width: 250px; height: auto"
+                      />
+                    </a>
+                    <a
+                      href="https://booksy.com/en-us/1628968_rnj-barber-co_barber-shop_100868_gilroy?do=invite&utm_medium=c2c_referral#ba_s=dl_1"
+                      class="mt-2 btn btn-brand"
+                      target="_blank"
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                  <p class="mt-2">
+                    <a href="#" target="_blank" class="btn btn-outline-dark">
+                      <i class="bi bi-instagram"></i> rnjbarberco
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col order-1 order-lg-2">
+            <img src="./public/bw_img_3.jpg" alt="black and white image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location and Contact -->
+
+    <footer id="location">
+      <div class="container location">
+        <div class="row">
+          <div class="col text-center my-4">
+            <img
+              src="public/gilroy_essential_logo.png"
+              alt="Logo"
+              class="img-fluid"
+            />
+            <div
+              class="social-links d-flex justify-content-center mx-auto mb-4 px-3"
+            >
+              <a
+                href="https://www.instagram.com/gilroyessentialbarbershop/"
+                target="_blank"
+                class="me-3"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://www.yelp.com/biz/gilroy-essential-barbershop-gilroy"
+                target="_blank"
+                class="me-3"
+              >
+                <i class="bi bi-yelp"></i>
+              </a>
+            </div>
+            <h3>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=197+B+Welburn+Ave+Gilroy+CA+95020"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                197 B Welburn Ave<br />
+                Gilroy, CA, 95020
+              </a>
+            </h3>
+            <div class="d-flex justify-content-center align-items-center my-2">
+              <p class="mb-0 text-decoration-underline">Tuesday-Friday</p>
+              <h6 class="mb-0 ms-2">9AM-7PM</h6>
+            </div>
+            <div class="d-flex justify-content-center align-items-center my-2">
+              <p class="mb-0 text-decoration-underline">Saturday</p>
+              <h6 class="mb-0 ms-2">9AM - 4PM</h6>
+            </div>
+            <div class="d-flex justify-content-center align-items-center my-2">
+              <p class="mb-0 text-decoration-underline">Sunday & Monday</p>
+              <h6 class="mb-0 ms-2">Closed</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
